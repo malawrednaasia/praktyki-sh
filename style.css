@@ -1,0 +1,76 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+#menu{
+    margin-left: 5vw;
+    margin-right: 1vw;
+}
+.menu-items{
+    float: left;
+    display: block;
+    padding: 3vw 2vw 2vw;
+
+}
+.menu-small{
+    font-size: 0.75vw;
+}
+#menu-get{
+    background-color: #3046FF;
+    color: #FFFFFF;
+    padding-right: 8vw;
+}
+#menu-container{
+    float: right;
+}
+
+#menu2{
+    clear: left;
+    margin-left: 15vw;
+    margin-right: 5vw;
+}
+.menu2-items{
+    float: left;
+    display: block;
+    padding: 2vw;
+}
+.menu2-underline:hover{
+    text-underline-color: #00FFCC;
+}
+.container1{
+    background-color: #F7F7F7;
+    clear:left;
+    display: block;
+}
+.container1-left{
+    float: left;
+
+}
+.container1-title{
+    color: #3046FF;
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    float: left;
+    margin-top: 10vw;
+    margin-left: 17vw;
+}
+.container1-phone{
+    float:right;
+    display: block;
+    padding: 2vw;
+}
+.container1-text{
+    font-size: 1.2vw;
+    clear: left;
+    padding-left: 17vw;
+    padding-top: 2vw;
+}
+.container1-google{
+    float: left;
+    display: block;
+    margin-left: 2vw;
+}
+.container1-app{
+    float: left;
+    display: block;
+}
