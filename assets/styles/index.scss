@@ -1,9 +1,419 @@
 // Apply a natural box layout model to all elements
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    float: left;
+    margin-left: 1.5vw;
+}
+
+.head {
+    float: right;
+    margin-right: 1vw;
+    &__items {
+        list-style-type: none;
+        float: left;
+        display: block;
+        padding: 3vw 2vw 2vw;
+
+        .small {
+            font-size: 0.75vw;
+        }
+        .get {
+            float: left;
+            background-color: #3046FF;
+            color: #FFFFFF;
+            padding-right: 8vw;
+        }
+    }
+}
+.navigation{
+    clear: left;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    list-style-type: none;
+
+
+    &__items{
+        float: left;
+        display: block;
+        padding: 2vw;
+        font-size: 1vw;
+        &--chosen{
+            font-weight: bold;
+            border-bottom-color: #00FFCC;
+        }
+    }
+}
+.content{
+    list-style-type: none;
+    background: #F7F7F7 url("../images/first_section_bg.png");
+    /*background-color: #F7F7F7;*/
+    clear:left;
+    height: 100%;
+    &__title{
+        color: #3046FF;
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        float: left;
+        background-color: #F7F7F7;
+        margin-top: 10vw;
+        margin-left: 17vw;
+    }
+    &__hand{
+        float:right;
+        display: block;
+        background-color: #F7F7F7;
+        margin:2vw;
+        //background-image: url("../images/hand.png");
+    }
+    &__text{
+        font-size: 1.2vw;
+        clear: left;
+        margin-left: 17vw;
+        padding-top: 2vw;
+    }
+    &__google{
+        margin-left: 17vw;
+        float: left;
+        padding-top: 2vw;
+        padding-right: 1vw;
+    }
+    &__app{
+        padding-top: 2vw;
+
+    }
+}
+.members{
+    padding-top: 16vw;
+    padding-left: 17vw;
+    background-color: #F7F7F7;
+    width: 100%;
+    &__col{
+        float: left;
+        display: block;
+        padding-right: 4.5vw;
+        background-color: #F7F7F7;
+
+        &__title{
+            clear: left;
+            font-size: 1.5vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            background-color: #F7F7F7;
+
+        }
+        &__text{
+            font-size: 1vw;
+            font-weight: 300;
+            padding-top: 1vw;
+            background-color: #F7F7F7;
+
+        }
+    }
+}
+.prob-sol{
+    clear: left;
+    padding-left: 17vw;
+    margin-top: 10vw;
+    background-color: #F7F7F7;
+    &__header{
+        clear: left;
+    }
+    &__col{
+        float:left;
+        margin-right: 1vw;
+        background-color: #FFFFFF;
+        padding: 1.5vw;
+        margin-top: 1.5vw;
+        &__image{
+
+        }
+        &__title{
+            clear: left;
+            font-size: 1vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+        }
+        &__text{
+            font-size: 0.8vw;
+            font-weight: 300;
+            padding-top: 1vw;
+        }
+    }
+}
+.features{
+    clear:left;
+    margin-top: 10vw;
+    background: #3046FF;
+    //background-image: url("../images/Layer 78.png");
+    &__header{
+        padding-left: 17vw;
+        background-color: #F7F7F7;
+
+    }
+    &__image{
+       margin-top: -26.5vw;
+        margin-left: 58vw;
+        //background: #3046FF;
+    }
+    &__title{
+        padding-left: 17vw;
+        letter-spacing: -0.2vw;
+        font-family: 'Poppins', sans-serif;
+        color: #FFFFFF;
+        font-size: 2.5vw;
+        font-weight: bolder;
+        //background: #3046FF;
+        padding-top: 5vw;
+        margin-top: -10vw;
+
+    }
+    &__content{
+        float:right;
+        color: #FFFFFF;
+        font-weight: 100;
+        //background: #3046FF;
+        margin-right: 20vw;
+
+    }
+    &__footer{
+        text-align: center;
+        color:#FFFFFF;
+        //background: #3046FF;
+        margin-top: 7vw;
+        padding-bottom: 1vw;
+
+
+    }
+}
+.room-booking{
+    padding-top: 6vw;
+    &__col{
+        padding-left: 17vw;
+        float: left;
+
+        &__title{
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5vw;
+            letter-spacing: -0.1vw;
+
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 0.9vw;
+            font-weight: 100;
+        }
+    }
+    &__image{
+        float: left;
+        margin-top: -4vw;
+        margin-left: 4vw;
+    }
+    &__features{
+        float: left;
+        margin-left: 4vw;
+        list-style-type: none;
+    }
+}
+.drop-downs{
+    clear: left;
+    hr {
+        clear: left;
+        display: block;
+        margin-left: 15vw;
+        margin-right: 15vw;
+        border: 0.01vw inset #FEFFFF;
+    }
+    &__item{
+        float: left;
+        padding-left: 17vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        font-size: 1vw;
+        font-weight: bold;
+
+    }
+    &__arrow{
+        float: right;
+        padding-right: 17vw;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+}
+
+.system{
+    &__col{
+        float: left;
+        padding-left: 17vw;
+        padding-right: 6vw;
+        &__title{
+            padding-top: 5vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.5vw;
+            letter-spacing: -0.1vw;
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 0.9vw;
+            font-weight: 100;
+        }
+    }
+}
+.download{
+   margin-left: 17vw;
+    margin-right: 15vw;
+    margin-top: 5vw;
+    font-size: 1vw;
+    padding: 2vw;
+    background-color: #F7F7F7;
+
+    &__title{
+        font-weight: bold;
+
+    }
+    &__description{
+        font-weight: 100;
+        padding-left: 2vw;
+    }
+    &__button{
+        float: right;
+        background-color: #3046FF;
+        border: none;
+        color: white;
+        padding: 1vw 2vw;
+    }
+}
+.bring-back-21st{
+    padding-left: 17vw;
+    padding-top: 5vw;
+    &__col{
+        float: left;
+        &__title{
+            padding-top: 10vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.4vw;
+            letter-spacing: -0.2vw;
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 1.5vw;
+            font-weight: 100;
+        }
+    }
+    &__image{
+        margin-left: 40vw;
+    }
+}
+.hardware{
+    list-style-type: none;
+    padding-left: 17vw;
+    &__col{
+        float: left;
+        margin-right: 5vw;
+        &__title{
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1vw;
+            letter-spacing: -0.12vw;
+
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 0.9vw;
+            font-weight: 100;
+        }
+    }
+}
+.partners{
+    margin-left: 17vw;
+    &__title{
+        padding-top: 5vw;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5vw;
+        letter-spacing: -0.1vw;
+    }
+    &__description{
+        padding-top: 3vw;
+        font-size: 0.9vw;
+        font-weight: 100;
+    }
+    &__col{
+        list-style-type: none;
+        float: left;
+        margin-top: 5vw;
+        margin-right: 3vw;
+        &__logo{
+
+        }
+        &__description{
+            padding-top: 3vw;
+            font-size: 0.9vw;
+            font-weight: 100;
+        }
+    }
+}
+
+.optimization{
+    padding-left: 17vw;
+    padding-top: 5vw;
+    &__col{
+        float: left;
+        &__title{
+            padding-top: 10vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.4vw;
+            letter-spacing: -0.2vw;
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 1.5vw;
+            font-weight: 100;
+            float:left;
+        }
+    }
+    &__image{
+    }
+}
+.numbers{
+    clear:left;
+    list-style-type: none;
+    padding-left: 17vw;
+    &__col{
+        float: left;
+        margin-right: 5vw;
+        &__title{
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3vw;
+            letter-spacing: -0.12vw;
+
+        }
+        &__content{
+            padding-top: 3vw;
+            font-size: 0.9vw;
+            font-weight: 100;
+        }
+    }
 }
