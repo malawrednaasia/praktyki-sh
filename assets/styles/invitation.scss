@@ -1,0 +1,276 @@
+@import "colors";
+
+.content-mobile {
+    &__text {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &__google {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &__app {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+.shop{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    list-style-type: none;
+    background: $primary-grey url("../images/first_section_bg.png") no-repeat;
+    /*background-color: #F7F7F7;*/
+    clear: left;
+    height: content-box;
+    margin: 0;
+    padding-bottom: 10vw;
+    &__title {
+        color: $primary-blue;
+        font-size: 3vw;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        float: left;
+        background-color: $primary-grey;
+        margin-top: 10vw;
+        margin-left: 17vw;
+    }
+    &__hand {
+        float: right;
+        display: block;
+        margin: -27vw 2vw;
+        //background-image: url("../images/hand.png");
+    }
+    &__mob-hand {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        height: 0;
+        width: 0;
+    }
+    &__text {
+
+        font-size: 1.2vw;
+        clear: both;
+        margin-left: 17vw;
+        margin-top: -5vw;
+        padding-top: 2vw;
+    }
+    &__google {
+        margin-left: 17vw;
+        float: left;
+        padding-top: 2vw;
+        padding-right: 1vw;
+        &__button {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+        }
+    }
+    &__app {
+        padding-top: 2vw;
+        button {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .content-mobile {
+        margin-top: 0;
+        padding-bottom: 10vw;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        visibility: visible;
+        background-color: $primary-grey;
+
+        &__title {
+            list-style-type: none;
+            font-size: 9vw;
+
+            width: 150vw;
+            height: auto;
+
+            margin-left: 5vw;
+            margin-top: 0;
+            //margin-bottom: 55vw;
+
+            //padding-bottom: 20vw;
+            padding-top: 15vw;
+
+            color: $primary-blue;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            background-color: $primary-grey;
+        }
+        &__text {
+            visibility: visible;
+            height: auto;
+            width: auto;
+
+            list-style-type: none;
+
+            font-size: 1rem;
+            margin-top: 10vw;
+            order: 1;
+            margin-left: 5vw;
+        }
+
+    }
+
+    .shop {
+        visibility: visible;
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-flow: row;
+        //padding: 0;
+        padding-right: 5vw;
+        padding-left: 5vw;
+        padding-top: 10vw;
+        &__google {
+            visibility: visible;
+            height: auto;
+            width: auto;
+
+            list-style-type: none;
+
+            order: 2;
+            align-self: left;
+            margin-left: 0;
+            margin-right: 5vw;
+
+            &__button {
+                width: 100%;
+                padding: 0;
+                border: none;
+                & img {
+                    width: 100%;
+                }
+            }
+
+        }
+        &__app {
+            visibility: visible;
+            height: auto;
+            width: auto;
+            list-style-type: none;
+
+            order: 3;
+            &__button {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: none;
+                background: none;
+                & img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .content__mob-hand img {
+        width: 90%;
+        margin-left: 7vw;
+        //justify-self: center;
+        //align-self: flex-end;
+
+    }
+    .content {
+        margin-top: 70vw;
+        padding-left: 5vw;
+        padding-bottom: 0;
+        background: $primary-grey url("../images/desks2.png") no-repeat;
+
+        background-size: contain;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+        &__title {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+        }
+        &__hand {
+            visibility: hidden;
+            height: 0;
+            margin: 0;
+        }
+        &__mob-hand {
+            position: relative;
+
+            height: auto;
+            width: auto;
+            visibility: visible;
+            justify-self: center;
+            align-self: flex-end;
+            margin-top: -29vw;
+            //order: 2;
+
+        }
+        &__text {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+        }
+        &__google {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+            &__button {
+                height: 0;
+                width: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+        &__app {
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+            & button {
+                height: 0;
+                width: 0;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}

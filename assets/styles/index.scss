@@ -2,6 +2,11 @@
 // but allowing components to change
 // http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 
+@import "menu";
+@import "invitation";
+@import "colors";
+
+
 html {
     box-sizing: border-box;
 }
@@ -12,207 +17,42 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 
 }
 
-.header-mobile {
-    visibility: hidden;
-}
 
-.logo {
-    float: left;
-    margin-left: 5vw;
-    margin-top: 3vw;
-    display: flex;
-}
 
-.head {
-    //float: right;
-    margin:0vw;
-    //margin-bottom: 2vw;
-    display: flex;
-    list-style-type: none;
-    flex-flow: nowrap;
-    justify-content: right;
 
-    &__items {
-        padding-top: 2vw;
-        margin-right: 2vw;
-        align-self: flex-start;
-        &__small {
-            font-size: 0.75vw;
-            padding-top: 2vw;
-            margin-right: 2vw;
 
-        }
-        &__get {
-            font-size: 0.75vw;
-
-            align-items: flex-start;
-            background-color: #3046FF;
-            color: #FFFFFF;
-            padding-top: 2vw;
-            padding-right: 8vw;
-            border: none;
-            background-color: #3046FF;
-            padding-left: 2vw;
-            padding-bottom: 1vw;
-
-        }
-        button {
-            //padding-top: 2vw;
-            font-size: 0.85vw;
-            letter-spacing: -0.05vw;
-
-            border: none;
-            background-color: #FFFFFF;
-        }
-    }
-
-    //&__items {
-    //    list-style-type: none;
-    //    float: left;
-    //    display: block;
-    //    padding: 3vw 2vw 2vw;
-    //
-    //    &__small {
-    //        list-style-type: none;
-    //        float: left;
-    //        display: block;
-    //        padding: 3vw 2vw 2vw;
-    //
-    //        font-size: 0.75vw;
-    //    }
-    //    &__get {
-    //        list-style-type: none;
-    //        float: left;
-    //        display: block;
-    //        background-color: #3046FF;
-    //        color: #FFFFFF;
-    //        padding: 3vw 8vw 1vw 2vw;
-    //    }
-    //}
-}
-
-.navigation {
-    clear: right;
-    margin-top: 0vw;
-    padding: 0vw;
-    margin-left: 15vw;
-    margin-right: 5vw;
-    list-style-type: none;
-    background-color: #FFFFFF;
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-
-    &__items {
-        font-size: 1vw;
-
-        &__first {
-            font-size: 1vw;
-        }
-        &:hover {
-            font-size: 1vw;
-            font-weight: bold;
-            text-decoration: underline;
-            text-decoration-color: #00FFCC;
-            &:after {
-
-            }
-        }
-    }
-    //&__items{
-    //    float: left;
-    //    display: block;
-    //    padding: 2vw;
-    //    padding-top: 0vw;
-    //    font-size: 1vw;
-    //
-    //}
-}
-
-.content-mobile {
-    visibility: hidden;
-}
-
-.content {
-    list-style-type: none;
-    background: #F7F7F7 url("../images/first_section_bg.png") no-repeat;
-    /*background-color: #F7F7F7;*/
-    clear: left;
-    height: content-box;
-    margin: 0vw;
-    &__title {
-        color: #3046FF;
-        font-size: 3vw;
-        font-weight: bold;
-        font-family: 'Poppins', sans-serif;
-        float: left;
-        background-color: #F7F7F7;
-        margin-top: 10vw;
-        margin-left: 17vw;
-    }
-    &__hand {
-        float: right;
-        display: block;
-        margin: 2vw;
-        margin-top: -27vw;
-        margin-bottom: -27vw;
-        //background-image: url("../images/hand.png");
-    }
-    &__mob-hand {
-        visibility: hidden;
-    }
-    &__text {
-
-        font-size: 1.2vw;
-        clear: both;
-        margin-left: 17vw;
-        margin-top: -5vw;
-        padding-top: 2vw;
-    }
-    &__google {
-        margin-left: 17vw;
-        float: left;
-        padding-top: 2vw;
-        padding-right: 1vw;
-    }
-    &__app {
-        padding-top: 2vw;
-
-    }
-}
 
 .members {
-    margin: 0vw;
+    margin: 0;
     list-style-type: none;
-    padding-top: 0vw;
     padding-left: 17vw;
-    background-color: #F7F7F7;
+    background-color: $primary-grey;
     width: 100%;
     display: flex;
     &__col {
         //float: left;
         //display: block;
         padding-right: 4.5vw;
-        background-color: #F7F7F7;
+        background-color: $primary-grey;
 
         &__title {
             clear: left;
             font-size: 1.5vw;
             font-weight: bold;
             font-family: 'Poppins', sans-serif;
-            background-color: #F7F7F7;
+            background-color: $primary-grey;
 
         }
         &__text {
             font-size: 1vw;
             font-weight: 300;
             padding-top: 1vw;
-            background-color: #F7F7F7;
+            background-color: $primary-grey;
 
         }
     }
@@ -222,22 +62,24 @@ body {
     clear: left;
     padding-left: 17vw;
     margin-top: 10vw;
-    background-color: #F7F7F7;
+    background-color: $primary-grey;
     &__header {
         clear: left;
     }
 }
 
 .collection {
-    background-color: #F7F7F7;
+    background-color: $primary-grey;
     list-style-type: none;
     display: flex;
-    padding: 0vw;
-    margin: 0vw;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
     &__item {
         //float: left;
         margin-right: 1vw;
-        background-color: #FFFFFF;
+        background-color: $white;
         padding: 2.5vw;
         margin-top: 1.5vw;
         &__image {
@@ -261,10 +103,10 @@ body {
 .features {
     clear: left;
     margin-top: 10vw;
-    background: #3046FF;
+    background-color: $primary-blue;
     &__header {
         padding-left: 17vw;
-        background-color: #F7F7F7;
+        background-color: $primary-grey;
 
     }
     &__background {
@@ -280,7 +122,7 @@ body {
         padding-left: 17vw;
         letter-spacing: -0.2vw;
         font-family: 'Poppins', sans-serif;
-        color: #FFFFFF;
+        color: $white;
         font-size: 2.5vw;
         font-weight: bolder;
         //background: #3046FF;
@@ -290,7 +132,7 @@ body {
     }
     &__content {
         float: right;
-        color: #FFFFFF;
+        color: $white;
         font-weight: 100;
         //background: #3046FF;
         margin-right: 20vw;
@@ -298,7 +140,7 @@ body {
     }
     &__footer {
         text-align: center;
-        color: #FFFFFF;
+        color: $white;
         //background: #3046FF;
         margin-top: 7vw;
         padding-bottom: 1vw;
@@ -344,7 +186,7 @@ body {
         display: block;
         margin-left: 15vw;
         margin-right: 15vw;
-        border: 0.001vw inset #FEFFFF;
+        border: 0.001vw inset $primary-grey;
     }
     &__item {
         float: left;
@@ -389,7 +231,7 @@ body {
     margin-top: 5vw;
     font-size: 1vw;
     padding: 2vw;
-    background-color: #F7F7F7;
+    background-color: $primary-grey;
 
     &__title {
         font-weight: bold;
@@ -401,9 +243,9 @@ body {
     }
     &__button {
         float: right;
-        background-color: #3046FF;
+        background-color: $primary-blue;
         border: none;
-        color: white;
+        color: $white;
         padding: 1vw 2vw;
     }
 }
@@ -534,6 +376,7 @@ body {
         }
     }
 }
+
 //.shop{
 //    clear: left;
 //    list-style-type: none;
@@ -557,112 +400,80 @@ body {
 //    left: 0;
 //}
 
-@media only screen and (max-width: 700px) {
-    header{
-        visibility: hidden;
-        height: 0px;
-        margin: 0vw;
-        padding: 0vw;
-    }
-    .header-mobile{
-        margin-top: 5vw;
+@media only screen and (max-width: 600px) {
+    //*{
+    //    margin:0;
+    //    padding: 0;
+    //}
 
-        visibility: visible;
-        display: flex;
-        align-items: left;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin-left: 10vw;
-
-        &__item{
-            flex: 1;
-            flex-wrap: nowrap;
-        }
-
-    }
-    .navigation{
-        visibility: hidden;
-        width: 0px;
-    }
-    .content-mobile{
-        margin-top: 0vw;
-        visibility: visible;
-        background-color: #F7F7F7;
-        padding-bottom: 10vw;
-        &__title{
-            font-size: 8vw;
-            margin-left: 0vw;
-            list-style-type: none;
-            padding-bottom: 20vw;
-            padding-top: 10vw;
-
-            color: #3046FF;
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-            background-color: #F7F7F7;
-            margin-top: 0vw;
-        }
-    }
-    .content{
-        margin-top: 0vw;
+    .members {
+        flex-direction: column;
         padding-left: 5vw;
-        background: #F7F7F7 url("../images/desks.png") no-repeat;
+        justify-content: space-around;
+        &__col {
+            &:first-child {
+                visibility: visible;
+            }
+            visibility: hidden;
+            width: 0;
+            height: 0;
 
-        background-size: contain;
-        display: flex;
-        flex-wrap: wrap;
-        &__title{
-            visibility: hidden;
-            height: 0px;
         }
-        &__hand{
-            visibility: hidden;
-            height: 0px;
-            margin: 0px;
+    }
+
+    .members__col {
+        width: 100%;
+        height: 100%;
+        &__title {
+            font-size: 5vw;
         }
-        &__mob-hand{
-            visibility: visible;
-            margin-top: -30vw;
+        &__text {
+            font-size: 3vw;
+        }
+    }
+    .prob-sol {
+        margin: 0;
+        padding: 0;
+    }
+
+    .collection {
+        &__item {
+            &:first-child {
+                visibility: visible;
+            }
+
+        visibility: hidden;
+        width: 0;
+            margin: 0;
+            padding: 0;
+        //height: 0;
+
+    }
+    }
+    .collection__item:first-child{
+        justify-content: stretch;
+        visibility: visible;
+        margin: 0;
+        padding-left: 5vw;
+        width: 100%;
+        &__image{
             justify-self: center;
-            order: 1;
-
+        }
+        &__title:first-child{
+            font-size: 5vw;
         }
         &__text{
             font-size: 3vw;
-            margin-top: 3vw;
-            order:2;
-            margin-left: 0vw;
-        }
-        &__google{
-            order: 3;
-            align-self: left;
-            margin-left: 0vw;
-        }
-        &__app{
-            order: 4;
         }
     }
-}
-.members{
-    padding-left: 5vw;
-    &__col{
-        &:first-child{
-            visibility: visible;
-
-            &__title{
-                font-size: 15vw;
-                width: available;
-            }
-        }
-        visibility: hidden;
-        width: 0vw;
-
-
+    .collection__item__title{
+    font-size: 5vw
     }
-}
-.members__col:first-child{
-    width: 100%;
-    &__title{
-        font-size: 15vw;
+    .collection__item__image{
+        justify-self: center;
     }
+
 }
+
+
+
