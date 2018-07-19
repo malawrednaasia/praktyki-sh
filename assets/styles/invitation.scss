@@ -43,7 +43,7 @@
     clear: left;
     height: content-box;
     margin: 0;
-    padding-bottom: 10vw;
+    padding-bottom: 11vw;
     &__title {
         color: $primary-blue;
         font-size: 3vw;
@@ -57,7 +57,7 @@
     &__hand {
         float: right;
         display: block;
-        margin: -27vw 2vw;
+        margin: -25vw 2vw;
         //background-image: url("../images/hand.png");
     }
     &__mob-hand {

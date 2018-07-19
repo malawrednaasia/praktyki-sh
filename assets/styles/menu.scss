@@ -27,13 +27,13 @@
         margin-right: 2vw;
         align-self: flex-start;
         &__small {
-            font-size: 0.75vw;
+            font-size: 0.8rem;
             padding-top: 2vw;
             margin-right: 2vw;
 
         }
         &__get {
-            font-size: 0.75vw;
+            font-size: 0.8rem;
 
             align-items: flex-start;
             background-color: $primary-blue;
@@ -43,8 +43,8 @@
 
         }
         button {
-            font-size: 0.85vw;
-            letter-spacing: -0.05vw;
+            font-size: 0.85rem;
+            letter-spacing: -0.05rem;
 
             border: none;
             background-color: $white;
@@ -70,7 +70,7 @@
     text-shadow: 1vw 1vw $white;
 
     &__items {
-        font-size: 1vw;
+        font-size: 1.2rem;
         position: relative;
         display: inline-block;
         & a{
@@ -81,7 +81,7 @@
 
         }
         &:active{
-            font-size: 1vw;
+            font-size: 1.2rem;
             //font-weight: bold;
             text-shadow: 0 0 .65px $black;
             //text-decoration: underline;
@@ -100,7 +100,7 @@
         }
 
         &__first {
-            font-size: 1vw;
+            font-size: 1.2rem;
         }
         &:after {
 
@@ -108,7 +108,7 @@
 
 
         &:hover {
-            font-size: 1vw;
+            font-size: 1.2rem;
             //font-weight: bold;
             text-shadow: 0 0 .65px $black;
 
