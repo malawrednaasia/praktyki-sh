@@ -7,6 +7,7 @@
 @import "colors";
 @import "staff.scss";
 @import "problem-solving";
+@import "feature";
 
 
 html {
@@ -32,53 +33,7 @@ body {
 
 
 
-.features {
-    clear: left;
-    margin-top: 10vw;
-    background-color: $primary-blue;
-    &__header {
-        padding-left: 17vw;
-        background-color: $primary-grey;
 
-    }
-    &__background {
-        background: url("../images/Layer 78.png") no-repeat;
-        background-size: cover;
-    }
-    &__image {
-        margin-top: -26.5vw;
-        margin-left: 58vw;
-        //background: #3046FF;
-    }
-    &__title {
-        padding-left: 17vw;
-        letter-spacing: -0.2vw;
-        font-family: 'Poppins', sans-serif;
-        color: $white;
-        font-size: 2.5vw;
-        font-weight: bolder;
-        //background: #3046FF;
-        padding-top: 5vw;
-        margin-top: -10vw;
-
-    }
-    &__content {
-        float: right;
-        color: $white;
-        font-weight: 100;
-        //background: #3046FF;
-        margin-right: 20vw;
-
-    }
-    &__footer {
-        text-align: center;
-        color: $white;
-        //background: #3046FF;
-        margin-top: 7vw;
-        padding-bottom: 1vw;
-
-    }
-}
 
 .room-booking {
     padding-top: 6vw;
@@ -109,6 +64,7 @@ body {
         margin-left: 4vw;
         list-style-type: none;
     }
+
 }
 
 .drop-downs {
@@ -260,7 +216,7 @@ body {
     clear: both;
     padding-left: 17vw;
     padding-top: 5vw;
-    background: url("../images/devices.png") no-repeat right;
+    //background: url("../images/devices.png") no-repeat right;
     &__col {
         float: left;
         display: block;

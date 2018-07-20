@@ -1,5 +1,13 @@
 @import "colors";
 
+%hide{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .prob-sol {
     clear: left;
     padding-left: 17vw;
@@ -11,23 +19,33 @@
 }
 
 .collection {
-    background-color: $primary-grey;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
     padding: 0;
     margin: 0;
+    background-color: $primary-grey;
+    list-style-type: none;
+
+    display: flex;
+    //flex-wrap: nowrap;
+    //overflow: hidden;
+
     &__item {
-        //float: left;
-        margin-right: 1vw;
-        background-color: $white;
-        padding: 2.5vw;
         margin-top: 1.5vw;
+        margin-right: 1vw;
+        padding: 2.5vw;
+
+        background-color: $white;
+
+        flex-direction: column;
         &__image {
+            display: flex;
+            justify-content: center;
+            & img{
+                width: 75%;
+            }
 
         }
         &__title {
+            padding-top: 5vw;
             clear: left;
             font-size: 1vw;
             font-weight: bold;
@@ -40,11 +58,7 @@
         }
     }
     &__dots{
-        visibility: hidden;
-        height: 0;
-        width: 0;
-        margin: 0;
-        padding: 0;
+        @extend %hide;
 
 
     }
@@ -55,6 +69,10 @@
     .prob-sol {
         margin: 0;
         padding: 15vw 0 0;
+        &__header{
+            padding-bottom: 7vw;
+            padding-left: 5vw;
+        }
     }
 
     .collection {
@@ -68,7 +86,7 @@
             height: 0;
             margin: 0;
             padding: 0;
-            //height: 0;
+
             &__image{
                 padding-top: 10vw;
                 align-self: center;
@@ -120,10 +138,7 @@
 
 
     }
-    //.collection__item__title {
-    //    font-size: 5vw
-    //
-    //}
+
 
 }
 

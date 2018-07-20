@@ -1,0 +1,143 @@
+@import "colors";
+
+.features {
+    //clear: left;
+    margin-top: 10vw;
+    background-color: $primary-blue;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        padding-left: 17vw;
+        background-color: $primary-grey;
+
+    }
+    &__background {
+        background: url("../images/Layer 78.png") no-repeat;
+        background-size: cover;
+    }
+    &__image {
+        width: 80%;
+        height: 80%;
+        margin-top: -26.5vw;
+        margin-left: 58vw;
+        //background: #3046FF;
+    }
+    &__image-mobile{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+    &__arrows{
+        position: relative;
+        bottom: 11vw;
+        display: flex;
+        flex-direction: row;
+        order:1;
+        justify-content: space-between;
+        &__left-arrow{
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        &__right-arrow {
+            display:flex;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+    &__text{
+        position: relative;
+        bottom: 8vw;
+        order:2;
+        padding-left: 17vw;
+        flex-direction: row;
+        display: flex;
+
+        &__title {
+            letter-spacing: -0.2vw;
+            font-family: 'Poppins', sans-serif;
+            color: $white;
+            font-size: 2.5vw;
+            font-weight: bolder;
+            //background: #3046FF;
+            padding-top: 0vw;
+            margin-top: 0vw;
+
+        }
+        &__content {
+            position: relative;
+            top:4vw;
+            left:12vw;
+            color: $white;
+            font-weight: 100;
+            //background: #3046FF;
+            //position: relative;
+            //left:35vw;
+            //bottom:2vw;
+            font-size: 1vw;
+            //margin-right: 20vw;
+
+        }
+    }
+
+    &__footer {
+        text-decoration: none;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+
+        color: $white;
+        //background: #3046FF;
+        padding-bottom: 1vw;
+
+        &__dots{
+            font-size: 0.5vw;
+        }
+        &__text{
+            font-size: 0.8vw;
+            margin-top: 1vw;
+
+        }
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .features{
+        margin-top: 30vw;
+        background:url("../images/mob_features_bg.png") no-repeat;
+        justify-content: stretch;
+
+        &__header{
+            padding-bottom: 10vw;
+            padding-left: 5vw;
+        }
+        &__background{
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+        }
+        &__image{
+            visibility: hidden;
+            height: 0;
+            width: 0;
+            margin: 0;
+            padding: 0;
+        }
+        &__image-mobile{
+            visibility: visible;
+            height: auto;
+            width: auto;
+
+        }
+
+    }
+
+}
