@@ -33,7 +33,7 @@
 
         & img {
             width: 95%;
-            height: 95%;
+            //height: 95%;
         }
     }
 
@@ -75,12 +75,15 @@
         padding-left: 5vw;
         &__col {
             &__title {
-                font-size: 2rem;
+                font-size: 2.2rem;
+                letter-spacing: -0.1rem;
             }
             &__content {
                 margin-top: 22vw;
                 margin-bottom: 22vw;
-                font-size: 1.2rem;
+                font-size: 1.3rem;
+                letter-spacing: -0.05rem;
+
             }
             &__image{
                 top:0;
@@ -105,6 +108,10 @@
             }
             &__content{
                 padding-top: 10vw;
+                padding-right: 5vw;
+                font-size: 1.1rem;
+                letter-spacing: -0.05rem;
+                font-weight: 100;
             }
             visibility: hidden;
             width: 0;
