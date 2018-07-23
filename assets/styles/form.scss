@@ -1,5 +1,8 @@
 @import "colors";
 
+
+
+
 .form-navigation{
     display: flex;
     justify-content: center;
@@ -73,14 +76,32 @@
 
 
 }
+
+//.form-dots{
+//    background-size: 4px 8px;
+//    height:8px;
+//    background-image: radial-gradient(circle, black 1px, transparent 1px);
+//
+//}
+.form-dots{
+    background-image: linear-gradient(to right, black 14%, rgba(255,255,255,0) 0%);
+    //background-position: bottom;
+    background-size: 14px 1px;
+    height:3px;
+
+    background-repeat: repeat-x;
+}
 .form-input{
-    background-color: $white;
     border: none;
-    border-bottom: 1px dotted $black;
+    //border-bottom: 1px dotted $black;
     height: 3vw;
     font-size: 1.8rem;
     vertical-align: center;
     position: relative;
+    background-color: $white;
+
+
+
 
     //&:after {
     //
@@ -121,7 +142,7 @@
 @media only screen and (max-width: 600px) {
     .form-navigation{
         padding-top: 35vw;
-        padding-bottom: 22.5vw;
+        padding-bottom: 20vw;
         padding-left: 5vw;
         justify-content: left;
 
