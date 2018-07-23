@@ -58,11 +58,21 @@
 
 }
 @media only screen and (max-width: 600px) {
-.footer-row{
+.footer{
+    padding-left: 5vw;
+}
+    .footer-row{
     flex-direction: column;
+    padding-top: 24vw;
 }
     .footer-img{
         margin-top: 12vw;
         margin-left: 64vw;
     }
+    .footer-col{
+        &__title{
+            padding-bottom: 8vw;
+        }
+    }
+
 }
