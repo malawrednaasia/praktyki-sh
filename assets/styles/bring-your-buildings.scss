@@ -1,0 +1,134 @@
+@import "colors";
+
+%hide{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.bring-back-21st {
+    padding-left: 17vw;
+    padding-top: 5vw;
+    display: flex;
+    &__col {
+        &__title {
+            padding-top: 10vw;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.4rem;
+            letter-spacing: -0.2vw;
+        }
+        &__content {
+            padding-top: 3vw;
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+    }
+    &__image {
+        position: relative;
+        left: 2vw;
+        bottom: 2vw;
+
+        & img {
+            width: 95%;
+            height: 95%;
+        }
+    }
+
+}
+
+.hardware {
+    list-style-type: none;
+    padding-left: 17vw;
+    //padding-top: 5vw;
+    display: flex;
+    //justify-content: space-between;
+    margin-right: 0vw;
+    &__col {
+        flex: 7;
+        width: 100%;
+
+        &__title {
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            letter-spacing: -0.12vw;
+
+        }
+        &__content {
+            padding-top: 1.5vw;
+            font-size: 0.9rem;
+            font-weight: 100;
+        }
+    }
+    &__space {
+        flex: 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bring-back-21st {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5vw;
+        &__col {
+            &__title {
+                font-size: 2rem;
+            }
+            &__content {
+                margin-top: 22vw;
+                margin-bottom: 22vw;
+                font-size: 1.2rem;
+            }
+            &__image{
+                top:0;
+                left: 0;
+            }
+        }
+    }
+
+    .hardware {
+        margin:0;
+        padding-left: 5vw;
+        display: block;
+        //flex-direction: row;
+
+        &__col {
+            &:first-child {
+                visibility: visible;
+                width: auto;
+                height: auto;
+                flex:1;
+
+            }
+            &__content{
+                padding-top: 10vw;
+            }
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+            //& * {
+            //    visibility: hidden;
+            //    width: 0;
+            //    height: 0;
+            //    margin: 0;
+            //    padding: 0;
+            //}
+        }
+        &__space {
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+    }
+
+}
+
+

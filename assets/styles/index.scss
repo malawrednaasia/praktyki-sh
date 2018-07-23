@@ -8,6 +8,8 @@
 @import "staff.scss";
 @import "problem-solving";
 @import "feature";
+@import "bring-your-buildings";
+@import "form";
 
 
 html {
@@ -138,49 +140,9 @@ body {
     }
 }
 
-.bring-back-21st {
-    padding-left: 17vw;
-    padding-top: 5vw;
-    &__col {
-        float: left;
-        &__title {
-            padding-top: 10vw;
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-            font-size: 3.4vw;
-            letter-spacing: -0.2vw;
-        }
-        &__content {
-            padding-top: 3vw;
-            font-size: 1.5vw;
-            font-weight: 100;
-        }
-    }
-    &__image {
-        margin-left: 40vw;
-    }
-}
 
-.hardware {
-    list-style-type: none;
-    padding-left: 17vw;
-    &__col {
-        float: left;
-        margin-right: 5vw;
-        &__title {
-            font-weight: bold;
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.1vw;
-            letter-spacing: -0.12vw;
 
-        }
-        &__content {
-            padding-top: 3vw;
-            font-size: 0.9vw;
-            font-weight: 100;
-        }
-    }
-}
+
 
 .partners {
     margin-left: 17vw;

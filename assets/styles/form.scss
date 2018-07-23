@@ -1,0 +1,116 @@
+@import "colors";
+
+.form-navigation{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vw;
+    padding-bottom: 5vw;
+    &__col{
+        margin-right: 3vw;
+        font-size: 1rem;
+
+        & a{
+            text-decoration: none;
+            color: $black;
+        }
+                //font-size: 1rem;
+                ////font-weight: bold;
+                //text-shadow: 0 0 .65px $black;
+                ////text-decoration: underline;
+                ////text-decoration-color: $secondary-green;
+                //&:after {
+                //    display: block;
+                //    content: "";
+                //    position: absolute;
+                //    width: 50%;
+                //    height: 1px;
+                //    bottom: -5px;
+                //    left: 0%;
+                //    border-bottom: 3px solid $secondary-green;
+                //
+                //}
+
+
+
+    }
+    .selected{
+        text-shadow: 0 0  $black;
+        position: relative;
+        &:after{
+            display: block;
+            content: "";
+            position: absolute;
+            width: 30%;
+            height: 3px;
+            bottom:-5px;
+            border-bottom: 3px solid $secondary-green;
+
+        }
+    }
+
+}
+
+.form-row{
+    display: flex;
+    padding-left: 17vw;
+
+}
+.form-col{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 6vw;
+    &--message{
+        width: 77.5%;
+    }
+    &__label{
+        font-size: 0.8rem;
+        padding-bottom: 1vw;
+        padding-top: 1vw;
+
+    }
+
+
+}
+.form-input{
+    background-color: $white;
+    border: none;
+    border-bottom: 1px dotted $black;
+    height: 2vw;
+    font-size: 1vw;
+    vertical-align: center;
+    position: relative;
+
+    //&:after {
+    //
+    //    //display: block;
+    //    //content: ".";
+    //    //position: absolute;
+    //    //width: 100%;
+    //    //height: 1px;
+    //    //bottom: -5px;
+    //    //left: 0%;
+    //
+    //}
+}
+.required{
+    &:after{
+        content: "*";
+        color: $primary-blue
+    }
+
+}
+.submit-button-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    .submit{
+        background-color: $primary-blue;
+        border: none;
+        color: $white;
+        padding: 1vw 2vw;
+        justify-self: center;
+    }
+}
+

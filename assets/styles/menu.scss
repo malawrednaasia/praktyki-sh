@@ -22,14 +22,13 @@
     flex-flow: nowrap;
     justify-content: right;
 
-    &__items {
+    &__item {
         padding-top: 2vw;
         margin-right: 2vw;
         align-self: flex-start;
-        &__small {
+        &--small {
             font-size: 0.8rem;
-            padding-top: 2vw;
-            margin-right: 2vw;
+
 
         }
         &__get {
@@ -42,7 +41,7 @@
             padding: 2vw 8vw 1vw 2vw;
 
         }
-        button {
+        &__button {
             font-size: 0.85rem;
             letter-spacing: -0.05rem;
 
