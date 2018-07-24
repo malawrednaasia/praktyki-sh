@@ -1,97 +1,101 @@
 @import "colors";
 
-
-
-
-.form-navigation{
+.form-navigation {
     display: flex;
     justify-content: center;
     padding-top: 10vw;
     padding-bottom: 5vw;
-    &__col{
+    &__col {
         margin-right: 3vw;
         font-size: 1rem;
-
-        & a{
-            text-decoration: none;
-            color: $black;
-        }
-                //font-size: 1rem;
-                ////font-weight: bold;
-                //text-shadow: 0 0 .65px $black;
-                ////text-decoration: underline;
-                ////text-decoration-color: $secondary-green;
-                //&:after {
-                //    display: block;
-                //    content: "";
-                //    position: absolute;
-                //    width: 50%;
-                //    height: 1px;
-                //    bottom: -5px;
-                //    left: 0%;
-                //    border-bottom: 3px solid $secondary-green;
-                //
-                //}
-
-
+        &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: -5px;
+        border-bottom: 3px solid $secondary-green;
+        transition: width 0.3s;
 
     }
-    .selected{
-        text-shadow: 0 0  $black;
-        position: relative;
-        &:after{
-            display: block;
-            content: "";
-            position: absolute;
-            width: 30%;
-            height: 3px;
-            bottom:-5px;
-            border-bottom: 3px solid $secondary-green;
+        &:hover {
+            text-shadow: 0 0 $black;
+            position: relative;
 
+            &:after {
+                width: 100%;
+                display: block;
+                content: "";
+                position: absolute;
+                height: 3px;
+                bottom: -5px;
+                border-bottom: 3px solid $secondary-green;
+
+            }
         }
+    }
+
+    & a {
+        text-decoration: none;
+        color: $black;
     }
 
 }
 
-.form-row{
+.selected {
+    text-shadow: 0 0 $black;
+    position: relative;
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 30%;
+        height: 3px;
+        bottom: -5px;
+        border-bottom: 3px solid $secondary-green;
+        transition: width 0.5s;
+
+    }
+    &:hover {
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+
+
+.form-row {
     display: flex;
     padding-left: 17vw;
-
 }
-.form-col{
+
+.form-col {
     padding-bottom: 2vw;
     display: flex;
     flex-direction: column;
     width: 35%;
     margin-right: 6vw;
-    &--message{
+    &--message {
         width: 77.5%;
     }
-    &__label{
+    &__label {
         font-size: 0.8rem;
         padding-bottom: 1vw;
         padding-top: 1vw;
-
     }
-
-
 }
 
-//.form-dots{
-//    background-size: 4px 8px;
-//    height:8px;
-//    background-image: radial-gradient(circle, black 1px, transparent 1px);
-//
-//}
-.form-dots{
-    background-image: linear-gradient(to right, black 14%, rgba(255,255,255,0) 0%);
-    //background-position: bottom;
-    background-size: 14px 1px;
-    height:3px;
 
+.form-dots {
+    background-image: linear-gradient(to right, black 20%, rgba(255, 255, 255, 0) 0%);
+    background-size: 10px 1px;
+    height: 3px;
     background-repeat: repeat-x;
 }
-.form-input{
+
+.form-input {
     border: none;
     //border-bottom: 1px dotted $black;
     height: 3vw;
@@ -100,37 +104,35 @@
     position: relative;
     background-color: $white;
 
-
-
-
-    //&:after {
-    //
-    //    //display: block;
-    //    //content: ".";
-    //    //position: absolute;
-    //    //width: 100%;
-    //    //height: 1px;
-    //    //bottom: -5px;
-    //    //left: 0%;
-    //
-    //}
 }
-.form-mess{
+
+.form-mess {
     height: auto;
+    resize: none;
 }
-.required{
-    &:after{
+
+.required {
+    &:after {
         content: "*";
         color: $primary-blue
     }
-
 }
-.submit-button-container{
+.accepted{
+    display: flex;
+    background: url("../images/ptaszek.png") no-repeat;
+    background-position: right ;
+    //&:after{
+    //    content: "✓";
+    //    color: $primary-blue;
+    //    justify-content: flex-end;
+    //}
+}
+.submit-button-container {
     display: flex;
     justify-content: center;
     padding-top: 5vw;
     padding-bottom: 5vw;
-    .submit{
+    .submit {
         background-color: $primary-blue;
         border: none;
         color: $white;
@@ -140,12 +142,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .form-navigation{
+    .form-navigation {
         padding-top: 35vw;
         padding-bottom: 20vw;
         padding-left: 5vw;
         justify-content: left;
-
+        &__col{
+            padding-right: 10vw;
+        }
     }
     .form-row {
         display: flex;
@@ -157,7 +161,6 @@
         width: 100%;
         padding-bottom: 8vw;
         //border-bottom: 1px dotted $black;
-
     }
 
     .form-input {
@@ -166,11 +169,10 @@
         word-wrap: break-word;
         overflow-wrap: normal
     }
-    .form-mess{
+    .form-mess {
         height: auto;
         margin-bottom: 1vw;
-        overflow: auto;
-        resize: vertical;
+        resize: none;
         &:after {
             //height: 15vw;
             display: inline-block;
@@ -180,9 +182,11 @@
     .submit-button-container {
         .submit {
             padding: 5vw 10vw;
-
         }
         padding-bottom: 24vw;
+    }
+    .accepted{
+        background-image: none;
     }
 }
 

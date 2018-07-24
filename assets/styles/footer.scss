@@ -48,6 +48,9 @@
     }
     &__text{
         padding-top: 1vw;
+        &:hover{
+            text-shadow: 0 0 $white;
+        }
     }
 
 }
